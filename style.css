@@ -423,6 +423,12 @@ a {
 	padding: 5rem 0;
 }
 
+#image-with-star {
+	/* width: 70%; */
+	display: flex;
+	justify-content: center;
+}
+
 #client-bottom-container #star {
 	color: #FFD766;
 	background-color: #FFFFFF;
@@ -433,13 +439,14 @@ a {
 	align-items: center;
 	border-radius: 50%;
 	position: relative;
-	top: 10rem;
-    left: 10%;
+	top: 9rem;
+    left: -9%;
+	z-index: 2;
 }
 
 #client-bottom-container img {
-	width: 70%;
-	margin: 0 15% 0 15%
+	width: 275px;
+	z-index: 1;
 }
 
 #client-top-container i {
