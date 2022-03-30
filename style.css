@@ -466,7 +466,7 @@ a {
 
 footer {
 	background-color: #254D4D;
-	padding: 5rem 2rem 0 2rem;
+	padding: 5rem .5rem 0 .5rem;
 }
 
 #top-footer-container {
@@ -487,7 +487,7 @@ footer {
 	justify-content: flex-end;
 }
 
-.bottom-footer-container {
+.desktop-footer-container {
 	display: flex;
 	margin-top: 5rem;
 	flex-wrap: wrap;
@@ -498,7 +498,6 @@ footer {
 }
 
 .foot-sec1 {
-	margin: 1rem;
 	width: 100%;
 }
 
@@ -507,10 +506,24 @@ footer {
 
 }
 
-.bottom-footer-container .foot-sec2 {
+/*.bottom-footer-container */ .foot-sec2 {
 	display: flex;
 	justify-content: flex-start;
-	margin: 1rem;
+	margin: 2rem;
+}
+
+.testing-container {
+	justify-content: space-between;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.foot-sec2 ul li:first-child {
+	margin-bottom: .5rem;
+}
+
+.foot-sec2 strong {
+	color: #FCFBFF;
 }
 
 .foot-sec1 i {
@@ -527,7 +540,8 @@ footer {
 
 .bottom-footer-container ul {
 	color: #FCFBFF;
-	font-family: 'Poppins', sans-serif;
+	font-size: 14px;
+	text-align: initial;
 }
 
 #foot-btn1 {
@@ -632,6 +646,39 @@ footer {
 
 	#client-top-container img {
 		display: initial;
+	}
+
+	.foot-sec1 {
+		width: 25%;
+	}
+
+	footer {
+		padding: 7rem;
+	}
+
+	#top-footer-container {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	#foot-btn1 {
+		width: 11rem;
+		height: 3rem;
+		margin-right: 1rem;
+		font-size: 19px;
+	}
+
+	#foot-btn2 {
+		width: 11rem;
+		height: 3rem;
+		margin-right: 1rem;
+		font-size: 19px;
+	}
+
+	.desktop-footer-container {
+		display: flex;
+		align-items: baseline;
+		justify-content: space-between;
 	}
 
 	
