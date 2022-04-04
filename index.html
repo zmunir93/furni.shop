@@ -10,7 +10,7 @@
         <!-- <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet"> -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Poppins:wght@500&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;1,500&family=Poppins:wght@500&display=swap" rel="stylesheet">
         <script src="script.js" async defer></script>
     </head>
     <body>
@@ -19,8 +19,7 @@
             <div class="container flex-nav">
                 <div class="nav-header">
                     <h2>furni.shop</h2>
-                    <!-- <div class="zee2"> -->
-                    <div class="zee"> <!-- testing dive-->
+                    <div class="zee">
                         <div class="search">
                             <input type="search" placeholder="" class="search-bar">
                             <button class="magnify-icon f-icon">
@@ -31,7 +30,7 @@
                         <button class="nav-toggle f-icon" id="navToggle">
                             <i class="fa fa-bars"></i>
                         </button>
-                    </div> <!-- testing closing tag div -->
+                    </div>
                 </div>
 
                 <nav class="nav-links" id="nav-links">
@@ -42,7 +41,6 @@
                         <li class="nav link"><a href="#">Contact</a></li>
                     </ul>
                 </nav>
-            <!-- </div> zee2 closing tag -->
             </div>
         </div>
 
@@ -52,6 +50,9 @@
                 <button class="carousel-button next" data-carousel-button="next">&#62;</button>
                 <ul data-slides>
                     <li class="slide" data-active>
+                        <img src="img/furni4.webp" alt="warm southwestern style modern living room with blue couch">
+                    </li>
+                    <li class="slide" >
                         <img src="img/furni1.jpeg" alt="minimalistic modern living room">
                     </li>
                     <li class="slide">
@@ -59,9 +60,6 @@
                     </li>
                     <li class="slide">
                         <img src="img/furni3.webp" alt="modern inviting living room">
-                    </li>
-                    <li class="slide">
-                        <img src="img/furni4.webp" alt="warm southwestern style modern living room with blue couch">
                     </li>
                     <li class="slide">
                         <img src="img/furni5.webp" alt="cool and stone themed living room design with futon">
@@ -229,11 +227,10 @@
             <div id="client-top-container">
                 <img src="img/corner-thing.png">
                 <div class="client-text">
-                    <h1>What our happy <br> client says</h1>
+                    <h1>What our happy <br> clients say</h1>
                     <h4>File storage made easy - including powerful features <br> you won't find anywhere else.</h4>
                 </div>
             </div>
-            <i class="fa-solid fa-face-grin-stars smiley-face"></i>
             <div id="client-bottom-container">
                 <div id="image-with-star">
                     <div class="star-position-container">
@@ -241,12 +238,14 @@
                         <img src="img/portrait-headshot.png">
                     </div>
                 </div>
-                <h2>furni.shop</h2>
-                <h2>File storage made easy - including powerful features you won't find anywhere else.</h2>
-                <h3>Larry Diamond</h3>
-                <h4>Chief Executive Officer</h4>
-                <i class="fa-solid fa-arrow-left"></i>
-                <i class="fa-solid fa-arrow-right"></i>
+                <div class="client-writing-container">
+                    <h2 class="furni-space">furni.shop</h2>
+                    <h2><i>File storage made easy - including<br> powerful features you won't find<br> anywhere else.</i></h2>
+                    <h3>Larry Diamond</h3>
+                    <h4>Chief Executive Officer</h4>
+                    <i class="fa-solid fa-arrow-left"></i>
+                    <i class="fa-solid fa-arrow-right"></i>
+                </div>
             </div>
         </section>
         
@@ -259,7 +258,7 @@
                 </div>
             </div>
             <div class="bottom-footer-container">
-                <div class="desktop-footer-container"> <!-- start of desktop div -->
+                <div class="desktop-footer-container">
                     <div class="foot-sec1">
                         <h2>furni.shop</h2>
                         <p>Optix seamslessly connects your members with the community resources.</p>
@@ -311,8 +310,8 @@
                                 <li><button>Pricing</button></li>
                             </ul>
                         </div>
-                    </div> <!-- testing container -->
-                </div> <!-- end of desktop div -->
+                    </div>
+                </div>
             </div>
         </footer>
     </body>

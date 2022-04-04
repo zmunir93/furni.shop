@@ -4,11 +4,6 @@
 	padding: 0;
 }
 
-/* .li:before {
-	content:”\00A3″; font-family: “Font Awesome 5 Free“; font-weight: 900; 
-} */
-
-
 button, input[type="submit"], input[type="reset"] {
 	background: none;
 	color: inherit;
@@ -62,8 +57,6 @@ body {
 }
 
 .container {
-	/* max-width: 1100px; */
-	/* margin: 0 auto; */
 	padding: 20px 9px;
 }
 
@@ -77,10 +70,7 @@ a {
 /* Navbar */
 
 .navbar {
-	/* background: gray; */
-	/* position: fixed; */
 	width: 100%;
-    /* height: 400px; */
 }
 
 .nav link {
@@ -93,14 +83,12 @@ a {
 .flex-nav {
 	display: flex;
 	flex-direction: column;
-	/* height: 28vh; */
 }
 
 .nav-header {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	/* background-color: pink; */
 }
 
 .f-icon {
@@ -127,7 +115,6 @@ a {
 }
 
 .search {
-	/* background-color: green; */
 	font-size: 40px;
 	padding: 0 1rem;
 }
@@ -153,8 +140,7 @@ a {
 }
 
 .carousel {
-	/* width: 100vw; */
-	height: 100vh;
+	height: 54rem;
 	position: relative;
 	max-width: 100%;
 }
@@ -224,7 +210,7 @@ a {
 .trusted-companies {
 	background-color: #F3F6F5;
 	padding: 3rem;
-	margin-top: -260px; /* WILL NEED TO FIX THIS LATER */
+	margin-top: -260px;
 }
 
 .trusted-companies h3 {
@@ -270,16 +256,12 @@ a {
 
 .deal-img {
 	width: 2rem;
-	/* margin: .5rem 0; */
 }
 
 .deal-info {
-	/* display: flex; */
-	/* flex-wrap: wrap; */
 	width: 207px;
 	padding: 1rem;
 	margin: 3rem 1rem 0 1rem;
-	/* margin: 1rem; */
 }
 
 /*----------- About Us ------------------*/
@@ -417,6 +399,8 @@ a {
 	background-size: contain;
 }
 
+/*---------------- Client Section -----------------*/
+
 #client-say {
 	width: 90%;
 	margin: 0 auto 4rem;
@@ -425,8 +409,10 @@ a {
 }
 
 #client-top-container {
-	margin: 3rem 1rem 0 1rem;
+	width: 80%;
+	margin: 0 auto;
 	padding: 5rem 0;
+	text-align: center;
 }
 
 #image-with-star {
@@ -462,9 +448,52 @@ a {
 	display: none;
 }
 
+.client-writing-container {
+	width: 60%;
+	margin: 1rem auto 0;
+	line-height: 1.3;
+	padding-bottom: 4rem;
+	line-height: 1.4;
+}
+
+.client-writing-container h2 i {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 20px;
+	font-weight: bolder;
+}
+
 #client-top-container h4 {
 	padding-top: 1em;
 }
+
+.fa-arrow-left{
+	color: #FFD766;
+	background-color: #FFFFFF;
+	width: 3rem;
+	height: 3rem;
+	display: flex !important;
+	justify-content: center;
+	align-items: center;
+	border-radius: 50%;
+	float: left;
+	clear: none;
+	margin-top: 4rem;
+	margin-right: 1rem;
+}
+
+.fa-arrow-right {
+	color: #FFD766;
+	background-color: #FFFFFF;
+	width: 3rem;
+	height: 3rem;
+	display: flex !important;
+	justify-content: center;
+	align-items: center;
+	border-radius: 50%;
+	margin-top: 4rem;
+}
+
+/*---------------- Footer -------------- */
 
 footer {
 	background-color: #254D4D;
@@ -508,7 +537,7 @@ footer {
 
 }
 
-/*.bottom-footer-container */ .foot-sec2 {
+.foot-sec2 {
 	display: flex;
 	justify-content: flex-start;
 	margin: 2rem;
@@ -567,6 +596,9 @@ footer {
 
 
 @media only screen and (min-width: 900px) {
+
+	/*---------------- Navigation Section----------------- */
+
 	.nav-toggle {
 		display: none;
 	}
@@ -580,13 +612,12 @@ footer {
 		justify-content: space-between;
 		align-items: center;
 		padding: 0 40px;
-		height: 11vh;
+		height: 5rem;
 	}
 	.nav-links {
 		height: auto;
 		width: auto;
 		margin: -57px 0 0 0;
-		/* background-color: rgb(161, 196, 177); */
 	}
 	ul {
 		text-align: center;
@@ -600,8 +631,14 @@ footer {
 		width: 100%;
 	}
 
+	/* ------------------ About Us Section ------------------ */
+
 	.learn-more {
 		margin-left: auto;
+	}
+
+	.us-button-container {
+		margin-bottom: 4rem;
 	}
 
 	.us-numbers {
@@ -634,23 +671,26 @@ footer {
 		padding: 0 .5rem;
 	}
 
+	/* ------------------- Products Section ------------------- */
+
 	.products {
 		margin: 0 4rem;
 	}
 
 	.products ul {
-		/* justify-content: center; */
 		margin: 0 auto;
 		margin-bottom: 4rem;
 		padding-top: 3rem;
 		width: 25rem;
 	}
 
+	/* ------------------ Client Section ----------------- */
+
 	#client-top-container img {
 		display: initial;
 		width: 15rem;
 		height: 15rem;
-		margin-left: -16px;
+		margin-left: -115px;
 		position: absolute;
 	}
 
@@ -667,12 +707,36 @@ footer {
 		z-index: 3;
 	}
 
-	.smiley-face {    
+	#client-bottom-container {
+		display: flex;
+		width: 80%;
+		margin: 0 auto;
+		padding-bottom: 5rem;
+	}
+
+	.client-writing-container {
+		width: 50%;
+		margin: 3rem auto 0;
+	}
+
+	.furni-space {
+		margin-bottom: 2rem;
+	}
+
+	.client-writing-container h3 {
+		margin-top: 2rem;
+	}
+
+	.client-writing-container h4 {
+		font-size: 13px;
+	}
+
+	.fa-face-grin-stars {    
 		color: rgb(255, 102, 102);
 		background-color: rgb(255, 255, 255);
 		width: 3rem;
 		height: 3rem;
-		display: flex;
+		display: flex !important;
 		justify-content: center;
 		align-items: center;
 		border-radius: 50%;
@@ -680,6 +744,8 @@ footer {
 		margin-left: auto;
 		margin-right: 10%;;
 	}
+
+	/* -------------------- Footer -------------------- */
 
 	.foot-sec1 {
 		width: 25%;
